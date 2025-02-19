@@ -44,6 +44,9 @@ jobs:
       #       any::knitr
       #       any::DT
 
+      - name: Render resume.qmd to PDF
+        run: quarto render resume.qmd --to pdf
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
